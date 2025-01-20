@@ -452,7 +452,7 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         display: flex;
-        flex-direction: row;
+        
     }
 
     .tecnologias{
@@ -465,11 +465,11 @@ footer {
         display: block;
     }
 .secao{
-    height: 200vh;
+    height: 140vh;
 }
     .secao h1{
         position: relative;
-        top: -300px;
+        top: -305px;
         font-size: 19px;
         right: -50px;
         
@@ -481,13 +481,15 @@ footer {
 
     .sobre p{
       font-size: 20px;
+      position: relative;
+      bottom: -100px;
       
       
     }
 
 .perfil{
     position: relative;
-    bottom: -200px;
+    bottom: -300px;
 }
 
 
@@ -538,6 +540,19 @@ footer {
 
     nav a {
         font-size: 12px;
+    }
+
+    .secao h1{
+        position: relative;
+        top: -225px;
+        font-size: 19px;
+        right: -50px;
+        
+    }
+
+    .tecnologias{
+        position: relative;
+        bottom:  -160px;
     }
 
     .descricao a {
