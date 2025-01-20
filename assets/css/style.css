@@ -1,0 +1,555 @@
+/* CSS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header, .secao, .projetos, .contatos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+.header {
+    height: 100vh;
+    /*background-image: url(./assets/Background/programming-a-laptop-wuze1bxup48cr0bs.jpg);*/
+    background-color: #F8F9FA;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    height: 65px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 230px;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+#icone-menu{
+    width: 20px;
+    background-color: white;
+}
+
+/* Hotbar (barra de ferramentas oculta por padrão) */
+.hotbar {
+    display: none; /* Começa escondida */
+    position: absolute;
+    top: 60px; /* Ajustar para ficar logo abaixo do cabeçalho */
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+/* Lista na hotbar */
+
+.hotbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hotbar li {
+    margin: 10px 0;
+}
+
+.hotbar a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hotbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.scrolling-text {
+    overflow: hidden;
+  }
+  
+  .scrolling-text p {
+    display: inline-block;
+    animation: scroll 2s linear infinite alternate;
+    font-size: 22px;
+    margin-top: 10px;
+    color: #1A1C20;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+nav a:hover {
+    border-bottom: 3px solid rgb(55, 0, 255);
+}
+
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .scrolling-text p {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.redes img{
+    width: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.redes li{
+    list-style: none;
+}
+.descricao {
+    margin-top: 30vh;
+    color: white;
+}
+
+.descricao h1, .descricao h2{
+    margin: 10px 0;
+    margin-top: 10px;
+    
+}
+
+.descricao h2{
+    color: #4A90E2;
+}
+
+.descricao h1{
+    color: #000;
+}
+
+
+
+.descricao a {
+    padding: 10px 20px;
+    border: 2px solid #121212;
+    color: #4F4F4F;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn{
+    position: relative;
+    top: 20px;
+}
+
+.descricao a:hover {
+    background-color: #28fc0c;
+}
+
+/* Seção Sobre */
+.secao {
+    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    /*background-image: url(./assets/Background/test.webp);*/
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-color: #F5F5F5;
+    color: #4A90E2;
+}
+    
+
+
+.sobre-container {
+    display: flex;
+  justify-content: center; /* Opcional: centraliza horizontalmente */
+  align-items: center;
+  height: 100%;
+  display: flex;
+    align-items: center;    /* Alinha horizontalmente */
+    height: 100%;           /* Garante que ocupe 100% da altura da seção */
+    text-align: center;     /* Alinha textos ao centro */
+    gap: 20px;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center;    /* Alinha horizontalmente */
+    height: 100%;           /* Garante que ocupe 100% da altura da seção */
+    text-align: center;     /* Alinha textos ao centro */
+    gap: 200px;     
+
+}
+
+.sobre-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.sobre-container h1{
+    position: relative;
+  top: -80px;
+  border-bottom: 2px solid;
+  width: 200px;
+  text-align: center;
+}
+
+.sobre p {
+    max-width: 800px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #121212;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    position: relative;
+    bottom: -200px;
+    gap: 80px;
+}
+
+.tecnologias img {
+    width: 40px;
+    height: 40px;
+    border:  none;
+}
+
+.tecnologias li{
+    list-style: none;
+}
+
+/* Projetos */
+.projetos {
+    height: 100%;
+    padding: 50px 20px;
+    /*background-image: url(./assets/Background/futuristic-project-management-inbiirodqxwccs7h.jpg);*/
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projetos h1{
+    position: relative;
+    bottom: -20px;
+    /*color: #121212;
+    border-bottom: 2px solid;*/
+}
+
+.projetos p{
+    position: relative;
+    bottom: -60px;
+    font-size: 18px;
+}
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90%;
+  margin: 1px auto;
+  gap: 20px;
+
+}
+
+.card {
+    width: 500px;
+    height: 600px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    bottom: -35px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+.tec {
+    display: flex; /* Transforma a div das tecnologias em um flex container */
+    justify-content: center;
+    gap: 10px; /* Adiciona espaço entre os parágrafos */ position: relative;
+    bottom: -80px;
+  }
+
+  .tec p {
+    border-radius: 2px;
+    padding: 3px;
+  }
+  .tec img{
+    width: 30px;
+
+  }
+  .button {
+    display: flex; /* Transforma a div dos botões em um flex container */
+    justify-content: center;
+    gap: 200px; /* Adiciona espaço entre os botões */
+    position: relative;
+    bottom: -170px;
+  }
+  .button button{
+padding: 3px;
+border-radius: 8px;
+  }
+
+  .button img{
+    width: 20px;
+    margin-left: 20px;
+  }
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contatos */
+.contatos {
+    height: 100vh;
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+    text-align: center;
+    color: rgb(41, 41, 41);
+   /* background-image: url(./assets/Background/laptop-com-icone-de-codigo-isometrico-de-programa-desenvolvimento-de-software-e-aplicacoes-de-programacao-neon-escuro_39422-971.avif);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contatos .fotinha img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.contatos h2{
+    position: relative;
+    top: -80px;
+    border-bottom: 2px solid;
+    color: #4A90E2;
+}
+
+.redes img{
+    position: relative;
+    bottom: -10px;
+}
+
+.contatos h3{
+    position: relative;
+    bottom: -5px;
+}
+
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form{
+    position: relative;
+    bottom: -15px; 
+}
+
+label{color: #FFFFFF;}
+
+.footer{
+    position: relative;
+    bottom: -30px; 
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form textarea {
+    resize: none;
+}
+
+.contatos{
+    height: 150vh;
+}
+
+form button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #333;
+    
+}
+
+/* FOOTER */
+footer {
+    background-color: #292929;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tecnologias{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .sobre{
+        height: 100vh;
+        display: block;
+    }
+.secao{
+    height: 200vh;
+}
+    .secao h1{
+        position: relative;
+        top: -300px;
+        font-size: 19px;
+        right: -50px;
+        
+    }
+
+    .sobre h2{
+
+    }
+
+    .sobre p{
+      font-size: 20px;
+      
+      
+    }
+
+.perfil{
+    position: relative;
+    bottom: -200px;
+}
+
+
+    .sobre-container {
+     height: 100vh;
+        flex-direction:column ;
+        position: relative;
+     
+    }
+
+
+
+    .titi2{
+        text-align: center;
+        position: relative;
+
+        top: -500;
+        color: red;
+    }
+    .descricao {
+        margin-top: 20vh;
+    }
+
+    .descricao a {
+        font-size: 14px;
+    }
+
+    .tecnologias img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .fotinha img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .descricao h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .descricao a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+.form{
+    background-color: #000;
+    width: 500px;
+    height: 600px;
+    border: 3px solid black;
+    border-radius: 10px;
+} 
