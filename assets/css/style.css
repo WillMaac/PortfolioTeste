@@ -452,7 +452,8 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         display: flex;
-        
+        justify-content: space-between;
+        gap: 10px;    
     }
 
     .tecnologias{
@@ -473,10 +474,6 @@ footer {
         font-size: 19px;
         right: -50px;
         
-    }
-
-    .sobre h2{
-
     }
 
     .sobre p{
